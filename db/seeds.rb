@@ -1,7 +1,14 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+
+# SUITS = [:spades, :diamonds, :hearts, :clubs]
+# VALUES = (1..13).to_a
+# FACES = ["Jack", "Queen", "King", "Ace"]
+
+# VALUES.flat_map do |v| 
+#     SUITS.map do |s| 
+#         Card.new(:value => v, :suit => s)
+#     end
+# end
+
+demian = Player.create(:username => "Demian", is_dealer: true)
+
