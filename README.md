@@ -1,25 +1,31 @@
-# README
+# Poker Logic (a work in progresse)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Built with Rails 6 and ReactJS
 
-Things you may want to cover:
+##### Poker hand logic is a fascinating way to OOP, logic flow and game logic.
 
-* Ruby version
+1.  A player can create a game and chose number of players.
+2.  A player is given a bank account from which they can place bets.
+3.  Players are dealth a hand of 5 cards
+4.  The rules of poker allow a user to draw, fold or stay.
+5.  The player with the best hand wins.
 
-* System dependencies
+## Poker hand rules:
 
-* Configuration
+royal_flush > straight_flush
 
-* Database creation
+straight_flush > four_of_a_kind
 
-* Database initialization
+four_of_a_kind > full_house
 
-* How to run the test suite
+full_house > flush
 
-* Services (job queues, cache servers, search engines, etc.)
+flush > straight
 
-* Deployment instructions
+straight > three_of_a_kind
 
-* ...
-# poker
+three_of_a_kind > two_pair
+
+two_pair > pair
+
+pair > high_card
