@@ -20,7 +20,7 @@ class Deck
   end
   
   def draw(amount)
-    @cards.pop(amount)
+    shuffle.pop(amount)
   end
   
 end
