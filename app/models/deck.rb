@@ -4,7 +4,7 @@ class Deck
   VALUES = (1..13).to_a
   FACES = ["Jack", "Queen", "King", "Ace"]
 
-  attr_reader :cards
+  attr_accessor :cards
   
   def initialize
     @cards = SUITS.flat_map do |suit|
@@ -20,7 +20,8 @@ class Deck
   end
   
   def draw(amount)
-    shuffle.pop(amount)
+    deck = self.shuffle
+    deck.pop(amount)
   end
   
 end

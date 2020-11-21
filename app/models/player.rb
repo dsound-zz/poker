@@ -1,7 +1,6 @@
 class Player < ApplicationRecord
 
-    has_many :player_games 
-    has_many :games, through: :player_games 
-    has_one :bank_account
+    belongs_to :game
+    has_one :bank_account, dependent: :destroy
 
 end
